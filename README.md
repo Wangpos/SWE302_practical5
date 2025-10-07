@@ -1,8 +1,8 @@
 # SWE302 Practical 5: Integration Testing with TestContainers
 ## Academic Report on Database Integration Testing Implementation
 
-**Student Name:** [Your Name]  
-**Student ID:** [Your Student ID]  
+**Student Name:** Tshering Wangpo Dorji 
+**Student ID:** 02230311
 **Course:** SWE302 - Software Testing & Quality Assurance  
 **Date:** October 7, 2025  
 **Practical:** Integration Testing with TestContainers for Database Testing
