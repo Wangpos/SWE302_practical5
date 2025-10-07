@@ -1,0 +1,79 @@
+2025/10/07 13:54:16 github.com/testcontainers/testcontainers-go - Connected to docker: 
+  Server Version: 28.4.0
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 7837 MB
+  Labels:
+    com.docker.desktop.address=unix:///Users/tsheringwangpodorji/Library/Containers/com.docker.docker/Data/docker-cli.sock
+  Testcontainers for Go Version: v0.39.0
+  Resolved Docker Host: unix:///var/run/docker.sock
+  Resolved Docker Socket Path: /var/run/docker.sock
+  Test SessionID: 9274a30d8e5a019a8f51e45cefa688b078370bd47fd567c1e88a2291ca2b9ebc
+  Test ProcessID: 49ab1b97-71d9-460d-943c-99deef02fb79
+2025/10/07 13:54:16 🐳 Creating container for image postgres:15-alpine
+2025/10/07 13:54:16 🐳 Creating container for image testcontainers/ryuk:0.13.0
+2025/10/07 13:54:16 ✅ Container created: aa478e7ffc24
+2025/10/07 13:54:16 🐳 Starting container: aa478e7ffc24
+2025/10/07 13:54:16 ✅ Container started: aa478e7ffc24
+2025/10/07 13:54:16 ⏳ Waiting for container id aa478e7ffc24 image: testcontainers/ryuk:0.13.0. Waiting for: &{Port:8080/tcp timeout:<nil> PollInterval:100ms skipInternalCheck:false skipExternalCheck:false}
+2025/10/07 13:54:16 Shell not found in container
+2025/10/07 13:54:16 🔔 Container is ready: aa478e7ffc24
+2025/10/07 13:54:16 ✅ Container created: 6a26cc20dd6e
+2025/10/07 13:54:16 🐳 Starting container: 6a26cc20dd6e
+2025/10/07 13:54:17 ✅ Container started: 6a26cc20dd6e
+2025/10/07 13:54:17 ⏳ Waiting for container id 6a26cc20dd6e image: postgres:15-alpine. Waiting for: &{timeout:<nil> deadline:0x14000391400 Strategies:[0x140001183c0]}
+2025/10/07 13:54:18 🔔 Container is ready: 6a26cc20dd6e
+=== RUN   TestGetByID
+=== RUN   TestGetByID/User_Exists
+=== RUN   TestGetByID/User_Not_Found
+--- PASS: TestGetByID (0.00s)
+    --- PASS: TestGetByID/User_Exists (0.00s)
+    --- PASS: TestGetByID/User_Not_Found (0.00s)
+=== RUN   TestGetByEmail
+=== RUN   TestGetByEmail/User_Exists
+=== RUN   TestGetByEmail/User_Not_Found
+--- PASS: TestGetByEmail (0.00s)
+    --- PASS: TestGetByEmail/User_Exists (0.00s)
+    --- PASS: TestGetByEmail/User_Not_Found (0.00s)
+=== RUN   TestCreate
+=== RUN   TestCreate/Create_New_User
+=== RUN   TestCreate/Create_Duplicate_Email
+--- PASS: TestCreate (0.00s)
+    --- PASS: TestCreate/Create_New_User (0.00s)
+    --- PASS: TestCreate/Create_Duplicate_Email (0.00s)
+=== RUN   TestUpdate
+=== RUN   TestUpdate/Update_Existing_User
+=== RUN   TestUpdate/Update_Non-Existent_User
+--- PASS: TestUpdate (0.00s)
+    --- PASS: TestUpdate/Update_Existing_User (0.00s)
+    --- PASS: TestUpdate/Update_Non-Existent_User (0.00s)
+=== RUN   TestDelete
+=== RUN   TestDelete/Delete_Existing_User
+=== RUN   TestDelete/Delete_Non-Existent_User
+--- PASS: TestDelete (0.00s)
+    --- PASS: TestDelete/Delete_Existing_User (0.00s)
+    --- PASS: TestDelete/Delete_Non-Existent_User (0.00s)
+=== RUN   TestList
+--- PASS: TestList (0.00s)
+=== RUN   TestCreateUser_TableDriven
+=== RUN   TestCreateUser_TableDriven/Valid_User
+=== RUN   TestCreateUser_TableDriven/Duplicate_Email
+--- PASS: TestCreateUser_TableDriven (0.00s)
+    --- PASS: TestCreateUser_TableDriven/Valid_User (0.00s)
+    --- PASS: TestCreateUser_TableDriven/Duplicate_Email (0.00s)
+=== RUN   TestFindByNamePattern
+=== RUN   TestFindByNamePattern/Find_Users_with_Smith
+=== RUN   TestFindByNamePattern/Find_Users_with_Non-Matching_Pattern
+--- PASS: TestFindByNamePattern (0.00s)
+    --- PASS: TestFindByNamePattern/Find_Users_with_Smith (0.00s)
+    --- PASS: TestFindByNamePattern/Find_Users_with_Non-Matching_Pattern (0.00s)
+=== RUN   TestCountUsers
+--- PASS: TestCountUsers (0.00s)
+=== RUN   TestGetRecentUsers
+--- PASS: TestGetRecentUsers (0.00s)
+=== RUN   TestTransactionRollback
+--- PASS: TestTransactionRollback (0.00s)
+=== RUN   TestWithCleanup
+--- PASS: TestWithCleanup (0.00s)
+PASS
+ok  	testcontainers-demo/repository	(cached)
