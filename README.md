@@ -415,27 +415,8 @@ func TestMain(m *testing.M) {
 }
 ```
 
----
 
-## 📸 REQUIRED SCREENSHOTS SUMMARY:
 
-### Critical Screenshots (Must Have):
-1. **Project Structure** - VS Code file explorer showing complete project hierarchy
-2. **Test Execution Output** - Terminal with `go test ./repository -v` showing all tests passing
-3. **Coverage Report** - Terminal with `go test ./repository -cover` showing 83.0% coverage
-4. **Detailed Coverage** - Terminal with `go tool cover -func=coverage.out` breakdown
-
-### Important Screenshots (Recommended):
-5. **Repository Code** - user_repository.go file showing CRUD methods implementation
-6. **Test Structure** - user_repository_test.go showing test function declarations
-7. **Docker Desktop** - Container status during test execution (if visible)
-
-### Optional Screenshots (Nice to Have):
-8. **Database Schema** - migrations/init.sql file content
-9. **Test Configuration** - TestMain function in test file
-10. **Go Module** - go.mod file showing dependencies
-
-**Note**: Screenshots should be clear, well-labeled, and demonstrate the working functionality of the TestContainers integration testing framework.
 
 ---
 
